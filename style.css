@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background: linear-gradient(to left top, #080573, #0A05BB);
+  color: white;
+}
+
+
+.logoMonster {
+  max-height: 50vh;
+  max-width: 50vw;
+}
+
+.logoArm {
+  max-height: 10vh;
+  max-width: 10vw;
+}
+
+#lienArm {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: white;
+}
+
+tr {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: end;
+}
+
+table {
+  border-collapse: collapse, separate;
+  border: 6px white;
+}
