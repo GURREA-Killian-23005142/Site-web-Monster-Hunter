@@ -5,24 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Monster Hunter</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="/style/style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png"
     href="https://ih1.redbubble.net/image.985337175.2804/raf,360x360,075,t,fafafa:ca443f4786.jpg">
 </head>
 
 <body class="bodyindex">
+  <header>
   <ul class="menuderoulant">
-    <li><a href="index.html">Monster Hunter</a></li>
-      <li><a href="#">Lien</a>
+    <li><a href="#">Lien</a>
       <ul class="sousmenu">
-        <li><a href="arme.html">Les différentes armes</a></li>
+        <li><a href="index.html">Monster Hunter</a></li>
+        <li><a href="html/arme.html">Les différentes armes</a></li>
         <li><a href="https://monsterhunter.fr/tag/forum/">Forum Monster Hunter</a></li>
       </ul>
     </li>
-    <li><a href="#">La Chasse</a>
+    <li id="titre"><a href="#">La Chasse</a>
       <ul class="sousmenu">
         <li><a href="#avantchasse">Se préparer avant la chasse</a></li>
-        <li><a href="#jamseul">Jamais Seul</a></li>
+        <li><a href="#jamaiseul">Jamais Seul</a></li>
         <li><a href="#objet">Les Objets</a></li>
         <li><a href="#monstre">Les Monstres</a></li>
       </ul>
@@ -33,23 +34,42 @@
         <li><a href="https://www.youtube.com/@monsterhunter">Youtube</a></li>
         <li><a href="https://www.instagram.com/monsterhuntergame/?hl=fr">Instagram</a></li>
         <li><a href="https://twitter.com/MHinfo_en">Twitter</a></li>
+        <li><a href="html/formulaire.html">Votre Avis !</a></li>
       </ul>
     </li>
-  </ul> <!--titre plus intro -->
+    <li><a href="#">Changer fond</a>
+    <ul class="sousmenu">
+      <select aria-label="couleur" id="theme">
+        <option value="null">Simple</option>
+        <option value="light">Clair</option>
+        <option value="blue">Normale</option>
+        <option value="pink">Sombre</option>
+        <option value="green">Obscure</option>
+      </select>
+        </ul>
+      </li>
+  </ul>
+    </header>
+  <!--titre plus intro -->
   <section class="présentations">
-    <div class="container-présentations">
-      <article class="titre-index">
-        <h1>Monster Hunter</h1>
-      </article>
-      <article class="intro-index">
+    <article class="container1 contentContainer" id=C1>
+      <div>
+        <h2 id="titre">Monster Hunter</h2>
         <p>Monster Hunter est un jeu massivement multijoueur où l'on incarne un chasseur de monstres. Bienvenue
           chasseur, laissez-nous vous emmener dans l'univers captivant de Monster Hunter, où la chasse est au cœur
           du monde. Choisissez une arme, des compagnons, et allons découvrir ensemble cet univers dangereux et
           étonnant. Serez-vous chasseur ou proie?</p>
-      </article>
-    </div>
-    <div class="intro1">
-      <article class="container-epic">
+      </div>
+    </article>
+    <article class="vidéos">
+      <video controls autoplay="1" muted="1" width="560" height="315">
+        <track default kind="captions" srclang="fr" src="/assert/subtitle.vtt" label="Français" />
+        <source src="assert/monster_hunter.mp4" type="video/mp4">Vidéo présentation
+      </video>
+    </article>
+
+    <section>
+      <article class="container1 epic ">
         <p>Une expérience épique où la bravoure rencontre la férocité des créatures fantastiques. Préparez-vous à
           plonger dans un monde rempli de mystères et de défis, où chaque pas résonne dans des écosystèmes
           grandioses et dangereux. En tant que chasseur intrépide, votre destin est intimement lié à celui de ces
@@ -58,40 +78,43 @@
           Préparez-vous à affronter des adversaires gigantesques, à forger des alliances avec d'autres chasseurs
           et à explorer des paysages éblouissants. Que la chasse commence.</p>
       </article>
-    </div>
+    </section>
 
-    <div class="intro3"><!--chasse 0 préparations-->
-      <article class="container-tutoriel">
-        <h2 id="avantchasse">Se préparer avant la chasse</h2>
-        <p>Et oui, chasseur, avant la chasse, il faut vérifier l'équipement à débloquer pour le craft si nécessaire
-          ou améliorer le vôtre, puis choisir une quête à la dame du village. Ensuite, il faut manger, et
-          maintenant vous pouvez partir en multi ou seul. Voici une courte description des 14 armes
-          disponibles.</p>
+    <!--chasse 0 préparations-->
+    <div>
+      <article class="container1 tutoriel" >
+        <div>
+          <h2 id="avantchasse">Se préparer avant la chasse</h2>
+          <p>Et oui, chasseur, avant la chasse, il faut vérifier l'équipement à débloquer pour le craft si nécessaire
+            ou améliorer le vôtre, puis choisir une quête à la dame du village. Ensuite, il faut manger, et
+            maintenant vous pouvez partir en multi ou seul. Voici une courte description des 14 armes
+            disponibles.</p>
+        </div>
       </article>
-      <article class="video-tutoriel">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/AFIXAvOQBMc" frameborder="0" allowfullscreen></iframe>
+      <article class="vidéos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AFIXAvOQBMc" frameborder="0"
+          allowfullscreen></iframe>
       </article>
-
     </div>
-
-    <div class="intro2"><!--chasse 1 jamais seul-->
-      <article class="container-tutoriel">
-        <h2 id="jamseul"> Jamais Seul</h2>
+    <!--chasse 1 jamais seul-->
+    <article class="container1 tutoriel">
+      <div>
+        <h2 id="jamaiseul"> Jamais Seul</h2>
         <p>Pendant votre chasse au monstre, il vous faudra de l'aide grâce à vos compagnons de voyage, qui peuvent
           être des palicos, chumskys ou des PNJ. Ils feront des choses différentes en fonction de leur classe, comme
           vous soigner, attaquer le monstre, le piéger ou récolter des ressources. Vous pourrez les entraîner et en
           acheter de nouveaux, donc pensez à en avoir de différents pour trouver le meilleur possible. Ne vous
           inquiétez pas si le monstre est trop fort, des joueurs expérimentés ou vos amis peuvent rejoindre dès que
           possible vos chasses.</p>
-      </article>
-      <article class="video-tutoriel">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/a6C5lH5b-f4?si=kHwED_b7q9GzPBHg" frameborder="0" allowfullscreen></iframe>
-      </article>
-    </div>
- 
-
-    <div class="intro2">
-      <article class="container-tutoriel"><!--chasse 2 des objet en voici-->
+      </div>
+    </article>
+    <article class="vidéos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/a6C5lH5b-f4?si=kHwED_b7q9GzPBHg"
+        frameborder="0" allowfullscreen></iframe>
+    </article>
+    <article class="container1 tutoriel">
+      <!--chasse 2 des objet en voici-->
+      <div>
         <h2 id="objet">Des objets en voici</h2>
         <p>Maintenant que vous avez lancé votre chasse, parlons des objets. Il y en a beaucoup, mais il y a trois
           grandes catégories. Les achetables peuvent être achetés au marchand ou à l'argosy, ce sont souvent des
@@ -100,14 +123,16 @@
           des minerais pour certaines armes et armures, et enfin, les lootables. Quand vous tuez un monstre ou terminez
           une quête, vous pouvez looter ou récupérer des matériaux qui ont différentes raretés, comme les gemmes de
           monstre. Pour plus d'informations, consultez votre compendium.</p>
-      </article>
-      <article class="video-tutoriel">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vm4BKXvSXY0?si=YcC33zqVZgrhLbvk" frameborder="0" allowfullscreen></iframe>
-      </article>
-    </div>
+      </div>
+    </article>
+    <article class="vidéos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Vm4BKXvSXY0?si=YcC33zqVZgrhLbvk"
+        frameborder="0" allowfullscreen></iframe>
+    </article>
 
-    <div class="intro2">
-      <article class="container-tutoriel"><!--les monstre-->
+    <article class="container1 tutoriel">
+      <!--les monstre-->
+      <div>
         <h2 id="monstre"> Les Monstres</h2>
         <p>Vous pensez que les monstres vous laisseront les tuer, mais détrompez-vous. Il existe des dizaines
           d'espèces différentes, telles que les wyvernes, les bêtes à crocs, ou les terribles et rares dragons anciens.
@@ -117,11 +142,18 @@
           certaines quêtes spéciales où trois évanouissements sont possibles, vous pouvez tenter votre chance. Pour
           finir la quête, sauf stipulé dans la quête, vous pouvez soit capturer le monstre après l'avoir affaibli,
           soit le tuer directement. Faites attention à la limite de temps quand même.</p>
-      </article>
-      <article class="video-tutoriel">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wH3sw_TslI8?si=zaDltopxwY9VX1Oa" frameborder="0" allowfullscreen></iframe>
-      </article>
+      </div>
+    </article>
+    <article class="vidéos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wH3sw_TslI8?si=zaDltopxwY9VX1Oa"
+        frameborder="0" allowfullscreen></iframe>
+    </article>
     </div>
   </section>
+  <a href="#titre"><img src="../image/fleche2.png" type="image/png" class="imgtop" alt="remonter en haut"></a>
+  <div>
+  <script src="../style/script.js" defer></script>
+  </div>
 </body>
+
 </html>
