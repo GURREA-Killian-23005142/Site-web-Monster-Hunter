@@ -240,6 +240,6 @@ button {
 }
 /*change pour le style obscure*/
 .green-mode {
-background-image: url('/image/gore\ magala.jpg');
+background-image: url('gore_magala.jpg');
   color: gold;
 }
