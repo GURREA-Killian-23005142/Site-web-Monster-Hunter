@@ -1,7 +1,8 @@
 html {
   scroll-behavior: smooth;
 }
-/*body basique de tout les page*/
+
+/* Basic styles for the entire page */
 body {
   margin: 0;
   padding: 0;
@@ -13,11 +14,10 @@ body {
   background-color: white;
   color: white;
   background-attachment: fixed;
-  font-family: 'myFont', sans-seri;
-
+  font-family: 'myFont', sans-serif;
 }
 
-/* Police d'écriture */
+/* Font styling */
 @font-face {
   font-family: 'myFont';
   src: url('style/Police/romanblack.ttf') format('truetype'),
@@ -31,19 +31,17 @@ body {
   color: white;
 }
 
-
-
-/*Bouton top*/
+/* Top button styles */
 .imgtop {
   max-height: 5%;
-  height:auto;
+  height: auto;
   max-width: 5%;
-  width:auto;
+  width: auto;
   background-color: white;
   float: right;
 }
 
-/*Parametre du formulaire*/
+/* Form styles */
 .formul {
   max-width: 50%;
   margin: 0 auto;
@@ -53,16 +51,16 @@ body {
   border-radius: 5px;
 }
 
-/*Parametre du menu deroulant*/
+/* Dropdown menu styles */
 .menuderoulant {
   height: 15%;
   width: 100%;
   list-style: none;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   position: fixed;
   top: 0;
-  float:left ;
+  float: left;
 }
 
 .menuderoulant li {
@@ -107,7 +105,7 @@ body {
 }
 
 .menuderoulant .sousmenu li a:link,
-.menuderoulant li a:visited {
+.menuderoulant .sousmenu li a:visited {
   display: block;
   color: #FFFFFF;
   text-decoration: dotted;
@@ -121,7 +119,8 @@ body {
 .menuderoulant li:hover .sousmenu {
   display: block;
 }
-/*container des images des déscriptions des tutoriel*/
+
+/* Container styles for tutorial descriptions */
 .container1 {
   box-shadow: 0px 0px 10px black;
   display: flex;
@@ -140,7 +139,8 @@ body {
   clear: both;
   content: "";
 }
-/*container des images des déscriptions des armes*/
+
+/* Container styles for weapon descriptions */
 .container2 {
   box-shadow: 0px 0px 10px black;
   display: flex;
@@ -152,94 +152,4 @@ body {
   max-height: 40%;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-.container2::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-/*container des images arme*/
-.container3 {
-  background-color: rgba(red, green, blue, 1);
-  display: flex;
-  border-radius: 5%;
-  padding: 5%;
-  max-width: 50%;
-  max-height: 50%;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 0%;
-}
-
-.container3::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-/*dimensions des images*/
-.image {
-  max-width: 40%;
-  max-height: 40%;
-}
-/*classe de la présentations*/
-.présentations {
-  font-size: 130%;
-  text-align: center;
-}
-
-/*dimensions et position des titres*/
-h2{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 300%;
-  text-align: center;
-  display: flex;
-}
-/*dimensions et position des texte*/
-p {
-  font-size: 150%;
-  text-align: center;
-  display: flex;
-}
-
-
-
-/*dimensions et position des vidéos*/
-.vidéos {
-  display: flex;
-  justify-content: center;
-}
-/* boutons pour le formulaire*/
-button {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Mode web */
-/*change pour le style clair*/
-.light-mode {
-   background-image: url('https://www.pixel4k.com/wp-content/uploads/2019/10/monster-hunter-world-iceborne_1570392791.jpg.webp');
-  color: black;
-}
-/*change pour le style normal*/
-.blue-mode{
-   background-image: url('https://images4.alphacoders.com/900/900718.jpg');
-    color: red;
-  }
-
-
-/*change pour le style sombre*/
-.pink-mode {
-  background-image: url('https://cdnb.artstation.com/p/assets/images/images/044/695/695/large/romens-hydra-.jpg?1640868948');
-  color: orange;
-}
-/*change pour le style obscure*/
-.green-mode {
-background-image: url('gore_magala.jpg');
-  color: gold;
-}
+  m
